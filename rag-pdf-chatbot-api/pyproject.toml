@@ -1,0 +1,19 @@
+[project]
+name = "rag-pdf-chatbot-api"
+version = "0.1.0"
+description = "RAG PDF chatbot backend powered by FastAPI, LangChain, and Groq"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic-settings",
+    "python-multipart",
+    "langchain-community",
+    "langchain-groq",
+    "langchain-chroma",
+    "langchain-huggingface",
+    "langchain-text-splitters",
+    "pypdf",
+    "sentence-transformers",
+]
