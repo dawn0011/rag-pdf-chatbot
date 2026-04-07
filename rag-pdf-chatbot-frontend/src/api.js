@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 import axios from 'axios';
 
@@ -58,7 +58,7 @@ export function streamChat(question, { onChunk, onFinish, onError } = {}) {
           } else {
             text = await resp.text()
           }
-        } catch (e) {
+        } catch {
           text = `Request failed with status ${resp.status}`
         }
         throw new Error(text || `Request failed with status ${resp.status}`)
