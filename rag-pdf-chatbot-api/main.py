@@ -24,9 +24,9 @@ async def lifespan(app: FastAPI):
     os.makedirs(settings.CHROMA_PERSIST_DIR, exist_ok=True)
     
     # Preload embedding model (approved feature)
-    print("📦 Preloading embedding model...")
-    preload_embeddings()
-    print("✅ Embedding model loaded")
+    # print("📦 Preloading embedding model...")
+    # preload_embeddings()
+    # print("✅ Embedding model loaded")
     
     yield
     
